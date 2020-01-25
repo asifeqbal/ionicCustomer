@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Dashboard
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-slides pager="true" autoplay="1000" loop="true" speed="500" pager="true" #mySlider [options]="options" (ionSlidesDidLoad)="slideChanged(mySlider)">
+
+    <ion-slide>
+     <ion-img src="/assets/kesari.jpg"></ion-img>
+     </ion-slide>  
+
+    <ion-slide>
+     <ion-img src="/assets/captain.jpg"></ion-img>
+     </ion-slide>
+
+    <ion-slide>
+     <ion-img src="/assets/badla.jpg"></ion-img>
+     </ion-slide>
+
+      <ion-slide> 
+            <ion-img src="/assets/avg.jpg"></ion-img>
+       </ion-slide>
+
+  </ion-slides>
+
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+  
+
+</ion-content>
